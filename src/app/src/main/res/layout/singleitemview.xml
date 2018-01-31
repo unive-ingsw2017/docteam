@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!--Vini:-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/vinilabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Vino: "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/vini"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/vinilabel"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/comunilabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vini"
+                android:paddingLeft="5dp"
+                android:singleLine="false"
+                android:text="Comuni: "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comuni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vini"
+                android:layout_toRightOf="@+id/comunilabel"
+                android:scrollbars="vertical"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/colorelabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comuni"
+                android:paddingLeft="5dp"
+                android:text="Tipo: "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/colore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comuni"
+                android:layout_toRightOf="@+id/colorelabel"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/gazzufficialelabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/colorelabel"
+                android:paddingLeft="5dp"
+                android:text="Gazzetta Ufficiale: "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gazzufficiale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/colore"
+                android:layout_toRightOf="@+id/gazzufficialelabel"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Tipo di Vino-->
+    <!--Comuni:-->
+    <!--Elenco comuni-->
+    <!--Tipo:-->
+    <!--Rosso, Bianco-->
+
+    <!--Gazzetta Ufficiale:-->
+    <!--n. 267 del 11/2nei2-->
+
+</RelativeLayout>
