@@ -91,14 +91,4 @@
                 android:textSize="21dp" />
         </LinearLayout>
     </ScrollView>
-
-    <!--Tipo di Vino-->
-    <!--Comuni:-->
-    <!--Elenco comuni-->
-    <!--Tipo:-->
-    <!--Rosso, Bianco-->
-
-    <!--Gazzetta Ufficiale:-->
-    <!--n. 267 del 11/2nei2-->
-
 </RelativeLayout>
