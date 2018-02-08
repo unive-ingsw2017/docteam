@@ -588,7 +588,7 @@ public class MapsActivity extends AppCompatActivity
 
     private void demo() {
         try {
-            InputStream is = getResources().openRawResource(R.raw.doc);
+            InputStream is = getResources().openRawResource(R.raw.vini);
             CsvRowParser p = new CsvRowParser(new InputStreamReader(is), true, ";");
             List<CsvRowParser.Row> rows = p.getAsyncTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR).get();
             List<MapItem> l = new ArrayList<>();
@@ -616,42 +616,4 @@ public class MapsActivity extends AppCompatActivity
             e.printStackTrace();
         }
     }
-
-    // parser2
-
-    @Nullable
-    private Collection<Marker> markers2;
-
-    private void demo2() {
-        try {
-            InputStream is2 = getResources().openRawResource(R.raw.docg);
-            CsvRowParser p2 = new CsvRowParser(new InputStreamReader(is2), true, ";");
-            List<CsvRowParser.Row> rows = p2.getAsyncTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR).get();
-            List<MapItem> l2 = new ArrayList<>();
-            for (final CsvRowParser.Row r2 : rows) {
-                l2.add(new MapItem() {
-                    @Override
-                    public LatLng getPosition() {
-                        String lat = r2.get("Latitudine"), lng = r2.get("Longitudine");
-                        return new LatLng(Double.parseDouble(lat), Double.parseDouble(lng));
-                    }
-
-                    @Override
-                    public String getTitle() {
-                        return r2.get("Comune");
-                    }
-
-                    @Override
-                    public String getDescription() {
-                        return r2.get("Vino");
-                    }
-                });
-            }
-            markers2 = putMarkersFromMapItems(l2);
-        } catch (InterruptedException | ExecutionException e2) {
-            e2.printStackTrace();
-        }
-    }
-
-
 }
