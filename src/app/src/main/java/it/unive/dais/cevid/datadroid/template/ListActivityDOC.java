@@ -62,7 +62,7 @@ public class ListActivityDOC extends AppCompatActivity {
                 "Rosso, Bianco", "Rosso", "Rosso", "Rosso, Bianco", "Rosso, Bianco"
         };
 
-        gazzufficiale = new String[] {"n. 267 del 16/11/2006", "n. 273 del 23/11/2011", "n. 274 del 24/11/2011", "n. 279 del 30/11/2011", "n 196 del 22/08/2008", "n. 246 del 22/10/2009", "n. 4 del 07/01/2011", "n. 235 del 08/10/2011", "n. 4 del 07/01/2011", "n. 120 del 25/05/2011", "n. 102 del 05/05/2009", "n. 248 del 24/10/2011", "n. 272 del 22/11/2011", "n. 4 del 07/01/2011", "n. 263 del 10/11/2010", "n. 251 del 27/10/2007", "n. 283 del 03/12/2010", "n. 141 del 19*06/2010", "n. 268 del 17/11/2006", "n 85 del 13/04/2010", "n 85 del 13/04/2010", "n. 4 del 07/01/2011", "n. 225 del 26/09/2000"};
+        gazzufficiale = new String[] {"n. 267 del 16/11/2006", "n. 273 del 23/11/2011", "n. 274 del 24/11/2011", "n. 279 del 30/11/2011", "n 196 del 22/08/2008", "n. 246 del 22/10/2009", "n. 4 del 07/01/2011", "n. 235 del 08/10/2011", "n. 4 del 07/01/2011", "n. 120 del 25/05/2011", "n. 102 del 05/05/2009", "n. 248 del 24/10/2011", "n. 272 del 22/11/2011", "n. 4 del 07/01/2011", "n. 263 del 10/11/2010", "n. 251 del 27/10/2007", "n. 283 del 03/12/2010", "n. 141 del 19/06/2010", "n. 268 del 17/11/2006", "n 85 del 13/04/2010", "n 85 del 13/04/2010", "n. 4 del 07/01/2011", "n. 225 del 26/09/2000"};
 
         // Locate the ListView in listview_main.xml
         list = (ListView) findViewById(R.id.listView1);
