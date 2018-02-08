@@ -56,7 +56,7 @@
 
         <activity
             android:name=".ListActivityDOC"
-            android:label="Elenco Prodotti DOC"
+            android:label="Vini DOC"
             android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.ListActivityDOC" />
@@ -66,7 +66,7 @@
 
         <activity
             android:name=".ListActivityDOCG"
-            android:label="Elenco Prodotti DOCG"
+            android:label="Vini DOCG"
             android:parentActivityName=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.ListActivityDOCG" />
@@ -84,7 +84,7 @@
 
         <activity
             android:name=".SingleItemVIew"
-            android:label="Prodotto"
+            android:label="Dettagli Vino"
             android:parentActivityName=".ListActivityDOC">
             <intent-filter>
                 <action android:name="android.intent.action.SingleItemVIew" />
