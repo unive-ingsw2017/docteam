@@ -6,37 +6,34 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
         android:onClick="openMap"
         android:text="Apri Mappa"
-        android:textSize="18dp">
-    </Button>
+        android:textSize="18dp"></Button>
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/button2"
         android:layout_below="@+id/button2"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:onClick="openList1"
         android:text="Vini DOC"
-        android:textSize="18dp">
-    </Button>
+        android:textSize="18dp"></Button>
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/button4"
-        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
         android:onClick="openList2"
         android:text="Vini DOCG"
-        android:textSize="18dp">
-    </Button>
+        android:textSize="18dp"></Button>
 </RelativeLayout>
